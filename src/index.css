@@ -7,6 +7,53 @@ body * {
 }
 
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-    sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 320px;
+}
+
+.main p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.main .word {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.play {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.keyboard>button {
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
 }

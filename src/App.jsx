@@ -1,8 +1,9 @@
-import {hangman} from './components/img/hangman.webp';
+import hangman from './components/img/hangman.webp';
 import {words} from './components/words.js';
 import {Abc} from './components/Abc.jsx'
 
 function App() {
+  const calc = Math.floor(Math.random() * words.length);
   
   return (
     <>

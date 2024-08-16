@@ -60,6 +60,14 @@ img {
   cursor: pointer;
 }
 
+.letter-guessed {
+  color: green;
+}
+
+.letter-wrong {
+  color: red;
+}
+
 .count {
   margin-top: 0.3rem;
 }

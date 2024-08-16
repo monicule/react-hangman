@@ -60,14 +60,20 @@ img {
   cursor: pointer;
 }
 
-.letter-guessed {
+.letterGuessed {
   color: green;
 }
 
-.letter-wrong {
+.letterWrong {
   color: red;
 }
 
 .count {
   margin-top: 0.3rem;
+}
+
+.hangmanContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }

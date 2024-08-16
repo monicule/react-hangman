@@ -1,6 +1,6 @@
 import { useState } from "react";
 import hangman from './components/img/hangman.webp';
-import {words} from './components/words.js';
+import {words} from './components/words/words.js';
 import {Abc} from './components/Abc.jsx';
 import { Statistic } from './components/Statistic.jsx';
 

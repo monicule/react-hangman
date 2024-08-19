@@ -1,12 +1,14 @@
-import { useState } from "react";
 import hangman from './components/img/hangman.webp';
 import {words} from './components/words/words.js';
 import {Abc} from './components/Abc.jsx';
 import Statistic  from './components/Statistic.jsx';
 
 function App() {
-  const calc = Math.floor(Math.random() * words.length);
-   window.addEventListener('keyup', (e) => {
+  let calc = Math.floor(Math.random() * words.length);
+  const startWord = words[calc].text;
+  const word = '_'.repeat(words[calc].text.length);
+   
+  window.addEventListener('keyup', (e) => {
     console.log(e.key);
   });
 
@@ -20,9 +22,8 @@ function App() {
     </header>
     <main>
         <img src={hangman} alt="hangman" /> 
-        <p className='word'>{words[calc].text}</p>
+        <Abc word={word} startWord={startWord}/>
         <div className='keyboard'>
-        <Abc/>
         </div>
         <button>Play Again</button>    
     </main>

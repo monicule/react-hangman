@@ -5,7 +5,7 @@
 
 # Hangman
 
-_game_
+_word-guessing game_
 
 <br>
 

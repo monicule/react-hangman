@@ -2,7 +2,7 @@ import { useState } from "react";
 import hangman from './components/img/hangman.webp';
 import {words} from './components/words/words.js';
 import {Abc} from './components/Abc.jsx';
-import { Statistic } from './components/Statistic.jsx';
+import Statistic  from './components/Statistic.jsx';
 
 function App() {
   const calc = Math.floor(Math.random() * words.length);
@@ -23,7 +23,8 @@ function App() {
         <p className='word'>{words[calc].text}</p>
         <div className='keyboard'>
         <Abc/>
-        </div>          
+        </div>
+        <button>Play Again</button>    
     </main>
     </>
   )

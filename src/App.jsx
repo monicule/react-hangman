@@ -1,3 +1,5 @@
+
+import { useEffect, useState } from 'react';
 import hangman from './components/img/hangman.webp';
 import {words} from './components/words/words.js';
 import {Abc} from './components/Abc.jsx';
@@ -6,7 +8,7 @@ import Statistic  from './components/Statistic.jsx';
 function App() {
   let calc = Math.floor(Math.random() * words.length);
   const startWord = words[calc].text;
-  const word = '_'.repeat(words[calc].text.length);
+  const word = '_  '.repeat(words[calc].text.length);
    
   window.addEventListener('keyup', (e) => {
     console.log(e.key);

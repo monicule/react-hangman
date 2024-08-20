@@ -1,4 +1,4 @@
-import {useState } from "react";
+import {useState, useEffect } from "react";
 
 export function Abc(params) {  
     const {word, actWord} = params;
@@ -6,7 +6,6 @@ export function Abc(params) {
     const keyboard = "QWERTYUIOPASDFGHJKLZXCVBNM".split('');
     const btn = keyboard.map(symbol => <button style={{}} disabled={false} onClick={e => checkLetter(e)} key={symbol}>{symbol}</button>);
     
-
     function checkLetter (e) {
         e => e.preventDefault();
             e.target.disabled = true;
@@ -27,6 +26,7 @@ export function Abc(params) {
 
     return   (
         <>
+        
         <p className='word'>{guess}</p>
         <div className='keyboard'>
             {btn}

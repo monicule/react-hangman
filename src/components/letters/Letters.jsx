@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import {randomWord} from "../words/RandomWord.jsx";
-import { Hangman } from "../Hangman.jsx";
+
 
 export function Letters () {
 
